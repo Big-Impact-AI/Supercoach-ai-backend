@@ -39,12 +39,12 @@ SuperCoach AI is an intelligent assistant built with Python to help coaches deli
 
 ## 🧰 Tech Stack
 
-| Layer       | Technology                            |
-|-------------|----------------------------------------|
-| **Language**     | Python                                |
+| Layer         | Technology |
+|---------------|------------|
+| **Language**  | Python |
 | **AI Framework** | [Crew AI](https://github.com/joaomdmoura/crewAI) – multi-agent coordination |
-| **Database**     | [Supabase](https://supabase.com) – user data, task tracking, progress |
-| **Frontend**     | Bolt (React) – clean, interactive user interface |
+| **Database**  | [Supabase](https://supabase.com) – user data, task tracking, progress |
+| **Frontend**  | Bolt (React) – clean, interactive user interface |
 | **Integrations** | OpenAI API, Email/SMS/WhatsApp (planned), Webhooks |
 
 ---
@@ -63,3 +63,94 @@ supercoach-ai/
 ├── config.py            # Config and environment variables
 ├── README.md
 └── requirements.txt
+````
+
+---
+
+## 🛠️ Setup & Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/supercoach-ai.git
+cd supercoach-ai
+```
+
+### 2. Create virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure environment variables
+
+Create a `.env` file and add your API keys and Supabase config:
+
+```env
+OPENAI_API_KEY=your_api_key
+SUPABASE_URL=https://yourproject.supabase.co
+SUPABASE_KEY=your_supabase_service_role_key
+```
+
+### 5. Run the project
+
+```bash
+python main.py
+```
+
+---
+
+## 🧪 Example Use Case
+
+A student logs in through the Bolt-based frontend and sees their next pending task.
+
+They ask:
+
+> "I'm stuck. What should I do next?"
+
+SuperCoach AI routes the request to the **Expert Guide**, which gives clear next steps, shares resources, and sends a motivational message from the **Motivating Friend**.
+If the student completes the task, they earn points or even a surprise reward!
+
+---
+
+## 📌 Roadmap
+
+* [ ] Admin/coach dashboard (via Supabase & Bolt)
+* [ ] Personalized AI agents per student
+* [ ] Voice support for conversations
+* [ ] Mobile app version
+* [ ] Reporting & insights for coaches
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, open an issue first to discuss what you’d like to improve or build.
+
+---
+
+## 📄 License
+
+MIT License. See `LICENSE` file for details.
+
+---
+
+## 💡 Inspiration
+
+SuperCoach AI was created to make coaching more scalable, personal, and effective — combining the human touch with intelligent automation.
+
+---
+
+Let us know if you'd like help with:
+
+* `requirements.txt` example
+* Supabase table schema
+* Sample `.env` file
+* Deployment steps (e.g., Docker, Railway, Render)
